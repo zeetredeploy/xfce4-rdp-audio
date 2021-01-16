@@ -44,7 +44,7 @@ RUN apt-get -yy purge xscreensaver
 RUN sed -i -e 's/\/usr\/bin\/openbox-session/dbus-launch \/usr\/bin\/xfce4-session/' /etc/service/openbox/run
 RUN rm -rf /etc/service/xclipboard/run
 
-WORKDIR /nobody
+WORKDIR /root
 
 
 #########################################
